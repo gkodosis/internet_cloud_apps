@@ -424,7 +424,7 @@ Angular](https://angular.io/guide/dependency-injection).
    ```javascript
    import { Injectable } from '@angular/core';
 
-   import { Book } from './hero';
+   import { Book } from './book';
    import { BOOKS } from './mock-books';
 
    @Injectable({
