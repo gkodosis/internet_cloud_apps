@@ -829,7 +829,7 @@ import { Observable, of } from 'rxjs';
 
 import { MessageService } from './message.service';
 
-import { Book } from './book;
+import { Book } from './book';
 import { BOOKS } from './mock-books';
 
 @Injectable({
