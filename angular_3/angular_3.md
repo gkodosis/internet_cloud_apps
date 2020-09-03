@@ -161,7 +161,6 @@
   γίνει:
 
    ```html
-   <h1>{{title}}</h1>
    <h2>Books</h2>
    <ul class="books">
      <li *ngFor="let book of books"
