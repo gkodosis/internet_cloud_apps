@@ -858,7 +858,7 @@ back-end, θα την ταΐσουμε με όσα δεδομένα χρειαζ
    export class BooksComponent implements OnInit {
 
      books = BOOKS;
-     selectedBook : Book;
+     selectedBook: Book;
 
      constructor() { }
 
