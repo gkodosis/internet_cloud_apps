@@ -458,12 +458,12 @@ Angular](https://angular.io/guide/dependency-injection).
    })
    export class BooksComponent implements OnInit {
 
-     books : Book[];
-     selectedBook : Book;
+     books: Book[];
+     selectedBook: Book;
 
      constructor(private bookService: BookService) { }
 
-     ngOnInit() {
+     ngOnInit(): void {
        this.getBooks();
      }
 
