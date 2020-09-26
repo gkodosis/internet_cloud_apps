@@ -520,7 +520,7 @@ Angular](https://angular.io/guide/dependency-injection).
 
 <div class="notes">
 
-Στην TypeScript, όλες οι ιδιότητες μιας κλάσεις είναι δημόσιες
+Στην TypeScript, όλες οι ιδιότητες μιας κλάσης είναι δημόσιες
 (public), εκτός και αν ορίσουμε εμείς ότι είναι ιδιωτικές (private) ή
 προστατευμένες (protected).
 
@@ -787,11 +787,11 @@ export class BookService {
 
      constructor() { }
 
-     add(message: string) {
+     add(message: string): void {
        this.messages.push(message);
      }
 
-     clear() {
+     clear(): void {
        this.messages.length = 0;
      }
 
