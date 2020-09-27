@@ -292,7 +292,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(private bookService: BookService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getBooks();
   }
 
@@ -619,11 +619,11 @@ export class DashboardComponent implements OnInit {
    })
    export class BooksComponent implements OnInit {
 
-     books : Book[];
+     books: Book[];
 
      constructor(private bookService: BookService) { }
 
-     ngOnInit() {
+     ngOnInit(): void {
        this.getBooks();
      }
 
@@ -756,7 +756,7 @@ export class DashboardComponent implements OnInit {
    import { ActivatedRoute } from '@angular/router';
    import { Location } from '@angular/common';
 
-   import { BookService }  from '../book.service';
+   import { BookService } from '../book.service';
 
    import { Book } from '../book';
 
@@ -912,7 +912,7 @@ export class DashboardComponent implements OnInit {
    import { ActivatedRoute } from '@angular/router';
    import { Location } from '@angular/common';
 
-   import { BookService }  from '../book.service';
+   import { BookService } from '../book.service';
 
    import { Book } from '../book';
 
