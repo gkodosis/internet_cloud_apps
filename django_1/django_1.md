@@ -1506,7 +1506,7 @@ superuser, ο οποίος έχει πλήρη πρόσβαση σε όλες τ
 
 ## Είσοδος στην Εφαρμογή Διαχείρισης
 
-![admin login](./django_1/django_admin_1.jpg){ width=50% }
+![admin login](./django_admin_1.jpg){ width=50% }
 
 
 <div class="notes">
@@ -1517,7 +1517,7 @@ superuser, ο οποίος έχει πλήρη πρόσβαση σε όλες τ
 
 ## Κεντρική Σελίδα Ελέγχου
 
-![main page](./django_1/django_admin_2.jpg){ width=70% }
+![main page](./django_admin_2.jpg){ width=70% }
 
 <div class="notes">
 
@@ -1550,7 +1550,7 @@ superuser, ο οποίος έχει πλήρη πρόσβαση σε όλες τ
 
 ## Κεντρική Σελίδα Ελέγχου
 
-![main page](./django_1/django_admin_3.jpg){ width=70% }
+![main page](./django_admin_3.jpg){ width=70% }
 
 <div class="notes">
 
