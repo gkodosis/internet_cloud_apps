@@ -1506,8 +1506,10 @@ superuser, ο οποίος έχει πλήρη πρόσβαση σε όλες τ
 
 ## Είσοδος στην Εφαρμογή Διαχείρισης
 
-![admin login](django_admin_1.jpg){ width=50% }
-
+<a href="url">
+  <img src="https://github.com/louridas/internet_cloud_apps/raw/master/django_1/django_admin_1.jpg" 
+       align="center" width="50%" alt="admin login">
+</a>
 
 <div class="notes">
 
@@ -1517,7 +1519,10 @@ superuser, ο οποίος έχει πλήρη πρόσβαση σε όλες τ
 
 ## Κεντρική Σελίδα Ελέγχου
 
-![main page](django_admin_2.jpg){ width=70% }
+<a href="url">
+  <img src="https://github.com/louridas/internet_cloud_apps/raw/master/django_1/django_admin_2.jpg" 
+       align="center" width="70%" alt="main page">
+</a>
 
 <div class="notes">
 
@@ -1550,7 +1555,10 @@ superuser, ο οποίος έχει πλήρη πρόσβαση σε όλες τ
 
 ## Κεντρική Σελίδα Ελέγχου
 
-![main page](django_admin_3.jpg){ width=70% }
+<a href="url">
+  <img src="https://github.com/louridas/internet_cloud_apps/raw/master/django_1/django_admin_3.jpg" 
+       align="center" width="70%" alt="main page">
+</a>
 
 <div class="notes">
 
