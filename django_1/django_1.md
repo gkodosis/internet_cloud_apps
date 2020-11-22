@@ -1275,7 +1275,7 @@ Phantom reads μπορούν να εμφανιστούν σε αναζητήσε
 
 ## Πρόληψη Δοσοληψίας
 
-* Αν έχουμε ορίζει ότι θέλουμε δοσοληψίες ανά αίτηση, αλλά θέλουμε να
+* Αν έχουμε ορίσει ότι θέλουμε δοσοληψίες ανά αίτηση, αλλά θέλουμε να
   απενεργοποιήσουμε αυτή τη συμπεριφορά για κάποιες αιτήσεις,
   χρησιμοποιούμε το διακοσμητή `@transaction.non_atomic_requests`.
   
@@ -1355,7 +1355,7 @@ Phantom reads μπορούν να εμφανιστούν σε αναζητήσε
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'djbr',
             'USER': 'djbr_user',
-            'PASSWORD': 'g8nzMktk6@y,
+            'PASSWORD': 'g8nzMktk6@y',
             'HOST': '127.0.0.1',
             'OPTIONS': {
                 'isolation_level': 'read committed'
