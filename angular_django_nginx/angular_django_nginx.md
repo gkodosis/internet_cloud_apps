@@ -6,7 +6,7 @@
 
 ## Γενικά
 
-* Μέχρι τώρα δεν έχουμε χρησιμοποιήσει κάποιον κανονικό εξυπηρετητεί ο
+* Μέχρι τώρα δεν έχουμε χρησιμοποιήσει κάποιον κανονικό εξυπηρετητή ο
   οποίος θα ακούει τις αιτήσεις της εφαρμογής μας.
 
 * Τώρα θα χρησιμοποιήσουμε το Angular στο frontend και το Django στο
@@ -322,7 +322,7 @@ class BookDetail(generics.RetrieveUpdateDestroyAPIView):
 Σε κάθε κλάση που ορίζουμε πρέπει να δίνουμε το μοντέλο στο οποίο
 αντιστοιχεί. Αυτό το κάνουμε ορίζοντας την ιδιότητα
 `serializer_class`. Επίσης πρέπει να δώσουμε τον τρόπο με τον οποίο θα
-γίνεται η αναζήτηση στη βάση ώστε να βρεθεί το αντικείμενο ήτα
+γίνεται η αναζήτηση στη βάση ώστε να βρεθεί το αντικείμενο ή τα
 αντικείμενα που θέλουμε. Για το λόγο αυτό γράφουμε τη μέθοδο
 `get_queryset()`. Ειδικά στην περίπτωση που μιλάμε για ένα
 συγκεκριμένο αντικείμενο (όπως στην `BookDetail`, μπορούμε απλώς να
@@ -363,11 +363,11 @@ queryset = Book.objects.all()
   from djbr import views
 
   urlpatterns = [
-      url(r'^api/', include(djbr.urls')),
+      url(r'^api/', include('djbr.urls')),
       url(r'^admin/', admin.site.urls),
   ] 
 
-  urlpatterns += url(r'^(?P<path>.*)$', views.index),
+  urlpatterns += url(r'^(?P<path>.*)$', views.index)
   ```
 
 <div class="notes">
@@ -515,15 +515,15 @@ front-end, δηλαδή το σύνολο της εφαρμογής Angular. Ν�
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard.component';
-import { BookDetailComponent } from './book-detail.component';
-import { BooksComponent } from './books.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { BooksComponent } from './books/books.component';
 import { BookService } from './book.service';
 
-import { BookSearchComponent } from './book-search.component';
+import { BookSearchComponent } from './book-search/book-search.component';
 
 import  { AppRoutingModule } from './app-routing.module';
 
@@ -531,7 +531,7 @@ import  { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   declarations: [
