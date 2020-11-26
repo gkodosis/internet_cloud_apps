@@ -172,7 +172,7 @@ RouterModule.forRoot(routes)
 δημιουργούμε με:
 
 ```javascript
-RouterModule.forRoot(routes)
+RouterModule.forChild(routes)
 ```
 
 οπότε δημιουργείται ένας δρομολογητής ο οποίος περιέχει όλες τις

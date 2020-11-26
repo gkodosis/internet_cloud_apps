@@ -88,7 +88,7 @@
 
 ```javascript
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule }    from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -97,7 +97,7 @@ import { AppComponent } from './app.component';
 import { BooksComponent } from './books/books.component';
 import { ItalicsDirective } from './italics.directive';
 import { BookDetailComponent } from './book-detail/book-detail.component';
-import { MessagesComponent } from './messages/messages.component';
+import { MessagesComponent } from './messages/messages.component';  
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -238,7 +238,7 @@ export class AppModule { }
     * @param operation - name of the operation that failed
     * @param result - optional value to return as the observable result
     */
-   private handleError<T> (operation = 'operation', result?: T) {
+   private handleError<T>(operation = 'operation', result?: T) {
      return (error: any): Observable<T> => {
 
        // TODO: send the error to remote logging infrastructure
@@ -521,8 +521,7 @@ TypeScript δεν θα μπορούσαμε να το χρησιμοποιήσο
      <button (click)="add(bookTitle.value, bookUrl.value, bookPubDate.value);
                       bookTitle.value=''; 
                       bookUrl.value='';
-                      bookPubDate.value='';
-                      bookTitle.value=''">
+                      bookPubDate.value='';">
        Add
      </button>
    </div>

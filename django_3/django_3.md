@@ -101,7 +101,7 @@ Connection: close
 
 * Η μέθοδος GET ζητά να επιστραφεί μια αναπαράσταση ενός πόρου.
 
-* Οι αιτήσεις GET θα πρέπει μόνο να *ανακτούν* δεδομένα, και σε καμμία
+* Οι αιτήσεις GET θα πρέπει μόνο να *ανακτούν* δεδομένα, και σε καμία
   περίπτωση δεν θα πρέπει να τα αλλάζουν.
 
 ## Η μέθοδος POST
@@ -444,9 +444,9 @@ urlpatterns = [
 		<a href="{% url 'djbr:reviews' book.id %}">
 		  <span class="badge badge-secondary">{{ book.review_set.all.count }}</span>
 		</a>
-		<a href="{% url 'djbr:reviews' book.id %}">
-		  <span class="fas fa-plus-circle" aria-hidden="true"></span>
-		</a>
+    <a href="{% url 'djbr:reviews' book.id %}">
+      write review
+    </a>
 		</span>
 	  </li>
 	</ul>
@@ -458,7 +458,7 @@ urlpatterns = [
 Όπως βλέπουμε, προσθέσαμε το σύνδεσμο γράφοντας:
 
 ```html
-<a href="{% url 'djbr:review' book.id %}">
+<a href="{% url 'djbr:reviews' book.id %}">
   write review
 </a>
 ```
