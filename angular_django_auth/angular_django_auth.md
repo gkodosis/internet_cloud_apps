@@ -176,7 +176,7 @@ class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
 * H εγκατάσταση γίνεται με:
 
    ```bash
-   pip install djangorestframework-jwt
+   pip install djangorestframework-simplejwt
    ```
 
 ## Ρυθμίσεις `settings.py`
@@ -612,7 +612,7 @@ export class AppComponent {
     </div>
   </div>
 
-  <div class="card col-4" style="margin-top: 2rem; margin-botton: 2rem;">
+  <div class="card col-4" style="margin-top: 2rem; margin-bottom: 2rem;">
     <ul class="list-group list-group-flush">
       <li class="list-group-item" *ngFor="let review of reviews">
         {{ review.title }}

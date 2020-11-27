@@ -501,7 +501,7 @@ class ReviewSerializer(serializers.ModelSerializer):
    app_name = 'djbr'
 
    urlpatterns = [
-       re_path('^books/?$', views.BookList.as_view()),    
+       re_path(r'^books/?$', views.BookList.as_view()),    
        re_path(r'^books/(?P<pk>\d+)/?$', views.BookDetail.as_view()),
        re_path(r'^books/(?P<book_id>[0-9]+)/reviews/?$',
                views.ReviewList.as_view()),
@@ -554,7 +554,7 @@ class ReviewSerializer(serializers.ModelSerializer):
 
 <div class="notes">
 
-Η κλάση `ReviewDetail()` δεν έχει καμμία ιδιαιτερότητα. Χειρίζεται μια
+Η κλάση `ReviewDetail()` δεν έχει καμία ιδιαιτερότητα. Χειρίζεται μια
 συγκεκριμένη κριτική. Το φίλτρο για την εύρεση της κριτικής
 εφαρμόζεται αυτομάτως από το Django Rest framework, όπως ακριβώς
 γίνεται και τη μέθοδο `BookDetail()`.
@@ -739,7 +739,7 @@ export class AppRoutingModule { }
        </div>
      </div>
 
-     <div class="card col-4" style="margin-top: 2rem; margin-botton: 2rem;">
+     <div class="card col-4" style="margin-top: 2rem; margin-bottom: 2rem;">
        <ul class="list-group list-group-flush">
          <li class="list-group-item" *ngFor="let review of reviews">
            {{ review.title }}

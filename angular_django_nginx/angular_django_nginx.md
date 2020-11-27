@@ -561,22 +561,23 @@ export class AppModule { }
 
 ## Προσαρμογή `settings.py`
 
-* Στο αρχείο `settings.py` προσθέτουμε κάτω από τη γραμμή:
+* Στο αρχείο `settings.py` αντικαθιστούμε κάτω από τη γραμμή:
   ```python
   STATIC_URL = '/static/'
   ```
-  τις γραμμές:
-  ```
-  from pathlib import Path
-  STATICFILES_DIRS = (
-      os.path.join(str(Path(BASE_DIR).parents[0]), os.path.join('client', 'dist')),
-  )
 
-  STATIC_ROOT = os.path.join(BASE_DIR, 'dist')
-  ```
-  
 <div class="notes">
 
+τις γραμμές:
+```python
+from pathlib import Path
+STATICFILES_DIRS = (
+    os.path.join(str(Path(BASE_DIR).parents[0]), os.path.join('client', 'dist')),
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'dist')
+```
+  
 Με τις γραμμές:
 ```python
 from pathlib import Path
